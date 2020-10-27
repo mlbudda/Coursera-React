@@ -5,13 +5,15 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
 class Menu extends Component {
     constructor(props) {
         super(props);
+        
         this.state = {
           selectedDish: null
-            }
+        }
     }
-    onDishSelect(dish) {
-      this.setState({ selectedDish: dish});
-  }
+        onDishSelect(dish) {
+          this.setState({ selectedDish: dish});
+        }
+
   renderDish(dish) {
     if (dish != null)
         return(
@@ -27,8 +29,9 @@ class Menu extends Component {
         return(
             <div></div>
         );
-}
-render() {
+  }
+  
+  render() {
   const menu = this.props.dishes.map((dish) => {
       return (
         <div  className="col-12 col-md-5 m-1">
@@ -54,8 +57,8 @@ render() {
           </div>
         </div>
     </div>
-);
-}
+  );
+  }
 }
 
 
