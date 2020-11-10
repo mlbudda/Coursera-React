@@ -4,17 +4,22 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
 
 class Menu extends Component {
     constructor(props) {
+        // pass props(dishes)
         super(props);
         
+        // render with no details
         this.state = {
           selectedDish: null
         }
     }
+        // when dish is selected
         onDishSelect(dish) {
+          // update state
           this.setState({ selectedDish: dish});
         }
 
   renderDish(dish) {
+    // if we have dish selected, return
     if (dish != null)
         return(
             <Card>
@@ -25,6 +30,7 @@ class Menu extends Component {
                 </CardBody>
             </Card>
         );
+    // or return empty div's
     else
         return(
             <div></div>
@@ -32,9 +38,11 @@ class Menu extends Component {
   }
   
   render() {
+    // this is where props are passed
   const menu = this.props.dishes.map((dish) => {
       return (
         <div  className="col-12 col-md-5 m-1">
+          {/* whenever this card is clicked onClick is triggered */}
           <Card key={dish.id}
             onClick={() => this.onDishSelect(dish)}>
             <CardImg width="100%" src={dish.image} alt={dish.name} />
