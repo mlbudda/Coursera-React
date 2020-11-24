@@ -4,11 +4,6 @@ import { Card, CardImg, CardImgOverlay,
 
 
 class Menu extends Component {
-    constructor(props) {
-        // pass props(dishes)
-        super(props);
-    }
-
 
   render() {
     // this is where props are passed
