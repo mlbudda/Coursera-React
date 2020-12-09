@@ -13,7 +13,6 @@ class Contact extends Component {
     
     constructor(props) {
         super(props);
-
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -170,7 +169,7 @@ class Contact extends Component {
                                 </Col>
                                 <Col md={{size: 3, offset: 1}}>
                                     <Control.select model=".contactType" name="contactType"
-                                        class="form-control">
+                                        className="form-control">
                                             <option>Tel.</option>
                                             <option>Email</option>
                                         </Control.select>
