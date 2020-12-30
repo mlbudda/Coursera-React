@@ -16,7 +16,7 @@ function RenderCard({ item, isLoading, errMess }) {
     return <Loading />;
   } else if (errMess) {
     return <h4>{errMess}</h4>;
-  } else
+  } else {
     return (
       <FadeTransform
         in
@@ -28,7 +28,6 @@ function RenderCard({ item, isLoading, errMess }) {
           <CardImg src={baseUrl + item.image} alt={item.name} />
           <CardBody>
             <CardTitle>{item.name}</CardTitle>
-            {/* If item designation exsist, then I will render as Cardsubtitle, or give null. */}
             {item.designation ? (
               <CardSubtitle>{item.designation}</CardSubtitle>
             ) : null}
@@ -37,6 +36,7 @@ function RenderCard({ item, isLoading, errMess }) {
         </Card>
       </FadeTransform>
     );
+  }
 }
 
 function Home(props) {
@@ -45,20 +45,25 @@ function Home(props) {
       <div className="row align-items-start">
         <div className="col-12 col-md m-1">
           <RenderCard
-            item={props.promotion}
-            isLoading={props.promoLoading}
-            errMess={props.promoErrMess}
+            item={props.dish}
+            isLoading={props.dishesLoading}
+            errMess={props.dishesErrMess}
           />
         </div>
         <div className="col-12 col-md m-1">
           <RenderCard
             item={props.promotion}
-            isLoading={props.promoLoading}
-            errMess={props.promoErrMess}
+            isLoading={props.promosLoading}
+            errMess={props.promosErrMess}
           />
         </div>
         <div className="col-12 col-md m-1">
-          <RenderCard item={props.leader} />
+          {/* Week 4 assignment */}
+          <RenderCard
+            item={props.leader}
+            isLoading={props.leadersLoading}
+            errMess={props.leadersErrMess}
+          />
         </div>
       </div>
     </div>
