@@ -1,3 +1,9 @@
+# Here you can find my code for practical assignments for Coursera certifications:
+
+Front-End Web UI Frameworks and Tools: Bootstrap 4 - [Certificate](https://www.coursera.org/account/accomplishments/verify/PDY2VKCJ5MNA)
+
+
+Initial information:
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
