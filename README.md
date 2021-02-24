@@ -1,6 +1,6 @@
 # Here you can find my code for practical assignments for Coursera certifications:
 
-Front-End Web UI Frameworks and Tools: Bootstrap 4 - [Certificate](https://www.coursera.org/account/accomplishments/verify/PDY2VKCJ5MNA)
+Front-End Web Development with React! - [Certificate](https://www.coursera.org/account/accomplishments/verify/U5CCE2D7NBEL)
 
 
 Initial information:
